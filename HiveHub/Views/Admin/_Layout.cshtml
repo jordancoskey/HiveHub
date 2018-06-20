@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - HiveHub</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div id="HeaderSection">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darkMod rounded shrink">
+            <img class="navbar-brand" id="logo" src="~/Content/images/Logo.png" alt="LOGO" />
+
+            <ul id="navbarh" class="navbar-nav mr-auto">
+                <li class="nav-item active" id="navText2">Welcome, User!</li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#"><img id="logout" src="~/Content/images/logOutIcon.png" /></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content shadow ">
+            <header class="page-header ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-8 page-title-wrapper">
+                            <h1 class="page-title">HiveHub</h1>
+                            <h2 class="page-subtitle">Bee Smart. CONNECT</h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <!--Manage Managing Acency-->
+    <div id="OwnerMain" class="col-md-5 col-sm-12 row-md-3 mx-auto ">
+        <div class="card card-default widget animated shadow" style="animation-delay: 0.03s;">
+            <div class="card-heading ">
+                <div class="card-controls ">
+                    <a href="#" class="widget-minify"><i class="fa fa-chevron-up"></i></a>
+                    <a href="#" class="widget-close"><i class="fa fa-times"></i></a>
+                </div>
+                <h3 class="rounded card-title">Managing Agencies</h3>
+            </div>
+            <div class="card-body">
+                <div class="card">
+                    <h4 class="card-title padding-20 weight-bold text-center" id="GreyTextBackground">
+                        Current Managing Agencies
+                    </h4>
+                    <table>
+                        <tr>
+                            <td class="TenantDetails col-10">Remax - Summerstrand</td>
+                            <td class="TenantDetails col-2"><button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+
+                        </tr>
+                        <tr>
+                            <td class="TenantDetails col-10">Trafalgar - Cape Town</td>
+                            <td class="TenantDetails col-2"><button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--Current Managing Acency-->
+                <div class="card">
+                    <h4 id="GreyTextBackground" class="card-title text-center">New Managing Agency</h4>
+                    <div class="card-body">
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Name: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Branch Name: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">City: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Country: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Password: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Confirm Password: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Contact-person Name: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Cellphone Number: </label>
+                            <input type="text" class="form-control" id="username" placeholder="">
+
+                        </form>
+                        <br />
+                        <form class="form-inline">
+
+                            <label for="username" class="weight-bold col-sm-6 col-form-label padding-right-xs">Email: </label>
+                            <input type="email" class="form-control" id="username" placeholder="">
+
+                        </form>
+
+                        <form class="form-inline text-center">
+                            <div id="CenterButtons" class="full-width">
+                                <br />
+                                <button type="button" class="btn btn-dark pull-right " data-dismiss="modal">Save</button>
+                                <button type="button" class="btn btn-dark pull-right " data-dismiss="modal">Add New Managing Agency</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="OwnerContent">
+        @RenderBody()
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

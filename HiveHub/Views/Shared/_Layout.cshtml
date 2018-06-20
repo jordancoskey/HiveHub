@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - HiveHub</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div id="HeaderSection">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darkMod rounded shrink">
+            <img class="navbar-brand" id="logo" src="~/Content/images/Logo.png" alt="LOGO" />
+
+            <ul id="navbarh" class="navbar-nav mr-auto">
+                <li class="nav-item active" id="navText2">Welcome, User!</li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button id="saveButton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#viewStaffModal">COMPLEX STAFF</button>
+                </li>
+                <li class="nav-item">
+                    <button id="saveButton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ProfileModal">PROFILE</button>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><img id="logout" src="~/Content/images/logOutIcon.png" /></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content shadow ">
+            <header class="page-header ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-8 page-title-wrapper">
+                            <h1 class="page-title">HiveHub</h1>
+                            <h2 class="page-subtitle">Bee Smart. CONNECT</h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div id="OwnerMain">
+        <div id="OwnerContent">
+            <!--Notices-->
+            <div id="OwnerNotices" class="panel  cardcard card-default widget animated" style="animation-delay: 0.03s;">
+                <div class="col-md-14 col-sm-12 ">
+                    <div class="card card-default widget animated" style="animation-delay: 0.03s;">
+                        <div class="card-heading">
+                            <div class="card-controls">
+                                <a href="#" class="widget-minify"><i class="fa fa-chevron-"></i></a>
+                                <a href="#" class="widget-close"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h3 id="DarkTextBackground" class="rounded card-title">Notices</h3>
+                        </div>
+                        <div class="card-body">
+                            <div style="height:200px; padding: 0px; position: relative; overflow-y: scroll;">
+                                <hr />
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="mt-0"><span class="pull-right text-sm">1 Week ago </span></h5>
+                                        Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<br />
+                                        <ul>
+                                            <li><a href="">Updated Complex Rules</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="mt-0"><span class="pull-right text-sm">2 Weeks ago </span></h5>
+                                        <h5 class="mt-0"></h5>
+                                        Nulla vel metus scelerisque ante sollicitudin. <ul></ul>
+                                        <ul>
+                                            <li><a href="">Notice of Construction</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Chat Box-->
+            <div id="OwnerChat" class="col-md-8 col-sm-12 row-md-3">
+                <div class="card card-default widget animated shadow" style="animation-delay: 0.03s;">
+                    <div class="card-heading ">
+                        <div class="card-controls ">
+                            <a href="#" class="widget-minify"><i class="fa fa-chevron-up"></i></a>
+                            <a href="#" class="widget-close"><i class="fa fa-times"></i></a>
+                        </div>
+                        <h3 class="rounded card-title">Buzzzing to chat ?</h3>
+                    </div>
+                    <div class="card-body">
+                        <div style="height:200px; padding: 0px; position: relative; overflow-y: scroll;">
+
+
+                            <!-- Chat objects -->
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="~/Content/temp/man-3263509_1280.jpg" alt="Male" width="48" height="48">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Jordan Coskey<span class="pull-right text-sm">5m ago </span></h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="~/Content/temp/marilyn-monroe-2028615_1280.jpg" alt="Female" width="48" height="48">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Melissa van der Merwe<span class="pull-right text-sm">10m ago </span></h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="~/Content/temp/man-3263509_1280.jpg" alt="Male" width="48" height="48">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Geoffrey Olls<span class="pull-right text-sm">15m ago </span></h5>
+                                    Hello
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="~/Content/temp/marilyn-monroe-2028615_1280.jpg" alt="Female" width="48" height="48">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Rose Smith<span class="pull-right text-sm">20m ago </span></h5>
+                                    Welcome back!
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="~/Content/temp/man-3263509_1280.jpg" alt="Male" width="48" height="48">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Dino Patsalos<span class="pull-right text-sm">25m ago </span></h5>
+                                    Hello :)
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="media">
+                                <img class="mr-3 rounded-circle" src="~/Content/temp/marilyn-monroe-2028615_1280.jpg" alt="Female" width="48" height="48">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Nadene Cool<span class="pull-right text-sm">30m ago </span></h5>
+                                    Hi all!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <form>
+                            <div class="form-group row ">
+                                <div class="col-10">
+                                    <input type="text" class="form-control col-lg-12 col-sm-8" placeholder="Type Your message Here...">
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary mb-2 ">Reply</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="OwnerContent">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="ProfileModal" tabindex="-1" role="dialog" aria-labelledby="updateProfile" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="dialog">
+            <div class="modal-content">
+
+                <!--Title-->
+                <div class="modal-header">
+                    <div id="TextYellowBackground" class="rounded full-width">
+                        <h4 class="modal-title">Your Profile</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <!--First Name fields-->
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <label for="profileFirstName" class="weight-bold col-sm-3 col-form-label padding-right-xs">First Name: </label>
+                        <input type="text" class="form-control" id="profileFirstName" placeholder="">
+                    </form>
+
+                    <br />
+                    <!--Last Name fields-->
+                    <form class="form-inline">
+                        <label for="profileLastName" class="weight-bold col-sm-3 col-form-label padding-right-xs">Last Name: </label>
+                        <input type="text" class="form-control" id="profileLastName" placeholder="">
+                    </form>
+
+
+
+                    <br />
+                    <!--Mobile number fields-->
+                    <form class="form-inline">
+                        <label for="profileCellNumber" class="weight-bold col-sm-3 col-form-label padding-right-xs">Mobile Number: </label>
+                        <input type="number" class="form-control" id="profileCellNumber" placeholder="">
+                    </form>
+
+                    <br />
+                    <!--Email Address fields-->
+                    <form class="form-inline">
+                        <label for="profileEmail" class="weight-bold col-sm-3 col-form-label padding-right-xs">Email Address: </label>
+                        <input type="email" class="form-control" id="profileEmail" placeholder="">
+                    </form>
+
+
+                    <br />
+
+                    <!--Country of residence fields-->
+                    <form class="form-inline">
+                        <label for="profileCountry" class="weight-bold col-sm-3 col-form-label padding-right-xs">Country of Residence: </label>
+                        <input type="email" class="form-control" id="profileCountry" placeholder="">
+                    </form>
+                </div>
+
+                <!--Update Button-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View Staff Modal -->
+    <div class="modal fade" id="viewStaffModal" tabindex="-1" role="dialog" aria-labelledby="viewStaff" aria-hidden="true">
+        <div class="modal-xl modal-dialog modal-dialog-centered " role="dialog">
+            <div class="modal-content">
+
+                <!--Title-->
+                <div class="modal-header">
+                    <div id="TextYellowBackground" class="rounded full-width">
+                        <h4 class="modal-title" id="updateProfileModalLabel">Worker Bees</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <!--Staff List-->
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card" style="width: auto;">
+                                <img class="card-img-top img-fluid" src="~/Content/temp/profilePicMale.jpg" alt="Profile picture">
+                                <div class="card-body">
+                                    <h5 class="card-title">John Smith</h5>
+                                    <form class="card-text">
+
+                                        <!--Role fields-->
+                                        <div class="form-inline">
+                                            <label for="staffRole" class="col-sm-3 col-form-label padding-right-xs">Role: </label>
+                                            <input type="text" class="form-control" id="staffRole" placeholder="Gardener" readonly>
+                                        </div>
+
+                                        <br />
+                                        <!--Shedual fields-->
+                                        <div class="form-inline">
+                                            <label for="staffShedual" class="col-sm-3 col-form-label padding-right-xs">Schedual: </label>
+                                            <input type="text" class="form-control" id="staffShedual" placeholder="Mon,Wed,Fri" readonly>
+
+                                        </div>
+
+
+                                        <br />
+
+                                        <!--Company fields-->
+                                        <div class="form-inline">
+                                            <label for="staffCompany" class="col-sm-3 col-form-label padding-right-xs">Company: </label>
+                                            <input type="text" class="form-control" id="staffCompany" placeholder="Top Class Gardening Inc." readonly>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm">
+                            <!--Staff Member-->
+                            <div class="card" style="width: auto;">
+                                <img class="card-img-top img-fluid" src="~/Content/temp/profilePicFemale.jpg" alt="Profile picture">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jane Doe</h5>
+                                    <form class="card-text">
+
+                                        <!--Role fields-->
+                                        <div class="form-inline">
+                                            <label for="staffRole" class="col-sm-3 col-form-label padding-right-xs">Role: </label>
+                                            <input type="text" class="form-control" id="staffRole" placeholder="House Keeper" readonly>
+                                        </div>
+
+                                        <br />
+                                        <!--Shedual fields-->
+                                        <div class="form-inline">
+                                            <label for="staffShedual" class="col-sm-3 col-form-label padding-right-xs">Schedual: </label>
+                                            <input type="text" class="form-control" id="staffShedual" placeholder="Tues,Thurs,Sat" readonly>
+
+                                        </div>
+
+
+                                        <br />
+
+                                        <!--Company fields-->
+                                        <div class="form-inline">
+                                            <label for="staffCompany" class="col-sm-3 col-form-label padding-right-xs">Company: </label>
+                                            <input type="text" class="form-control" id="staffCompany" placeholder="Spick and Span Cleaning pty" readonly>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="card" style="width: auto;">
+                                <img class="card-img-top img-fluid" src="~/Content/temp/profilePicMale.jpg" alt="Profile picture">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tom Jones</h5>
+                                    <form class="card-text">
+
+                                        <!--Role fields-->
+                                        <div class="form-inline">
+                                            <label for="staffRole" class="col-sm-3 col-form-label padding-right-xs">Role: </label>
+                                            <input type="text" class="form-control" id="staffRole" placeholder="Plumber" readonly>
+                                        </div>
+
+                                        <br />
+                                        <!--Shedual fields-->
+                                        <div class="form-inline">
+                                            <label for="staffShedual" class="col-sm-3 col-form-label padding-right-xs">Schedual: </label>
+                                            <input type="text" class="form-control" id="staffShedual" placeholder="Sun" readonly>
+
+                                        </div>
+
+
+                                        <br />
+
+                                        <!--Company fields-->
+                                        <div class="form-inline">
+                                            <label for="staffCompany" class="col-sm-3 col-form-label padding-right-xs">Company: </label>
+                                            <input type="text" class="form-control" id="staffCompany" placeholder="Jones Plumbing" readonly>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <!--Staff Member-->
+                            <div class="card" style="width: auto;">
+                                <img class="card-img-top img-fluid" src="~/Content/temp/profilePicFemale.jpg" alt="Profile picture">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carol May</h5>
+                                    <form class="card-text">
+
+                                        <!--Role fields-->
+                                        <div class="form-inline">
+                                            <label for="staffRole" class="col-sm-3 col-form-label padding-right-xs">Role: </label>
+                                            <input type="text" class="form-control" id="staffRole" placeholder="Private Chef" readonly>
+                                        </div>
+
+                                        <br />
+                                        <!--Shedual fields-->
+                                        <div class="form-inline">
+                                            <label for="staffShedual" class="col-sm-3 col-form-label padding-right-xs">Schedual: </label>
+                                            <input type="text" class="form-control" id="staffShedual" placeholder="Mon,Tues,Wed,Thurs,Fri,Sat," readonly>
+
+                                        </div>
+
+
+                                        <br />
+
+                                        <!--Company fields-->
+                                        <div class="form-inline">
+                                            <label for="staffCompany" class="col-sm-3 col-form-label padding-right-xs">Company: </label>
+                                            <input type="text" class="form-control" id="staffCompany" placeholder="24/7 Chef's" readonly>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm">
+                            <div class="card" style="width: auto;">
+                                <img class="card-img-top img-fluid" src="~/Content/temp/profilePicMale.jpg" alt="Profile picture">
+                                <div class="card-body">
+                                    <h5 class="card-title">James Richard</h5>
+                                    <form class="card-text">
+
+                                        <!--Role fields-->
+                                        <div class="form-inline">
+                                            <label for="staffRole" class="col-sm-3 col-form-label padding-right-xs">Role: </label>
+                                            <input type="text" class="form-control" id="staffRole" placeholder="Guard" readonly>
+                                        </div>
+
+                                        <br />
+                                        <!--Shedual fields-->
+                                        <div class="form-inline">
+                                            <label for="staffShedual" class="col-sm-3 col-form-label padding-right-xs">Schedual: </label>
+                                            <input type="text" class="form-control" id="staffShedual" placeholder="Mon,Tues,Wed,Thurs,Fri,Sat,Sun" readonly>
+
+                                        </div>
+
+
+                                        <br />
+
+                                        <!--Company fields-->
+                                        <div class="form-inline">
+                                            <label for="staffCompany" class="col-sm-3 col-form-label padding-right-xs">Company: </label>
+                                            <input type="text" class="form-control" id="staffCompany" placeholder="Blue Security" readonly>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <!--Staff Member-->
+                            <div class="card" style="width: auto;">
+                                <img class="card-img-top img-fluid" src="~/Content/temp/profilePicFemale.jpg" alt="Profile picture">
+                                <div class="card-body">
+                                    <h5 class="card-title">Holly Jacks</h5>
+                                    <form class="card-text">
+
+                                        <!--Role fields-->
+                                        <div class="form-inline">
+                                            <label for="staffRole" class="col-sm-3 col-form-label padding-right-xs">Role: </label>
+                                            <input type="text" class="form-control" id="staffRole" placeholder="Architech" readonly>
+                                        </div>
+
+                                        <br />
+                                        <!--Shedual fields-->
+                                        <div class="form-inline">
+                                            <label for="staffShedual" class="col-sm-3 col-form-label padding-right-xs">Schedual: </label>
+                                            <input type="text" class="form-control" id="staffShedual" placeholder="Mon" readonly>
+
+                                        </div>
+
+
+                                        <br />
+
+                                        <!--Company fields-->
+                                        <div class="form-inline">
+                                            <label for="staffCompany" class="col-sm-3 col-form-label padding-right-xs">Company: </label>
+                                            <input type="text" class="form-control" id="staffCompany" placeholder="P&T Architects" readonly>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
