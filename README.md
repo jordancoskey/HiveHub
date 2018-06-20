@@ -22,7 +22,7 @@ interactive functionality, that will:
     are commonly used by all the parties involved in a communal housing development.    
   ● Allow efficient and effective management of all parties within a communal
     housing development.    
-  ● Allow interactions amongst communal housing parties in the form of a chat.
+  ● Allow interactions amongst communal housing parties in the form of a chat.  
   ● Allow the centralisation of all necessary managing documents.  
   ● Allow all communal housing parties’ information to be centralised and
     therefore easily accessible.    
